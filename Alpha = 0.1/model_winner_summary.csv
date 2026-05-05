@@ -1,0 +1,7 @@
+Asset,Better_RMSE_Model,Better_MAPE_Model,Higher_Correlation
+SPY,GBM,GBM,Reflexive
+QQQ,GBM,GBM,GBM
+AAPL,GBM,GBM,GBM
+TSLA,Reflexive,Reflexive,GBM
+NVDA,GBM,GBM,Reflexive
+GME,GBM,GBM,Reflexive
