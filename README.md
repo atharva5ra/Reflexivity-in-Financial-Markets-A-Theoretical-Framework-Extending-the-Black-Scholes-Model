@@ -8,11 +8,8 @@
 
 <br/>
 
-[![IEEE CIFER 2026](https://img.shields.io/badge/IEEE_CIFER-2026-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://cifer.ai)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Monte_Carlo-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Under_Review-F59E0B?style=for-the-badge)]()
 
 <br/>
 
@@ -225,30 +222,6 @@ At moderate α, REF produces lower bulk volatility but **more extreme downside V
 │           # Primary experiment report and figures
 
 └── README.md
-```
-
----
-
-## Quickstart
-
-```bash
-# Clone the repository
-git clone https://github.com/[anonymized]/reflexive-black-scholes.git
-cd reflexive-black-scholes
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the full simulation suite
-python src/simulation/monte_carlo.py \
-    --assets SPY QQQ AAPL TSLA NVDA GME \
-    --alpha 0.1 0.3 0.6 0.9 \
-    --paths 100000 \
-    --steps 252
-
-# Reproduce paper figures
-python src/analysis/phase_diagrams.py
-python src/analysis/clustering.py
 ```
 
 ---
