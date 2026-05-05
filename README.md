@@ -153,7 +153,7 @@ Realized volatility increases monotonically with both α and λ across all asset
               RMSE       MAE        MAPE
   ─────────────────────────────────────────
   GBM        107.57     99.69      48.81%
-  REF         72.36     60.82      27.88%   ← REF outperforms by ~33%
+  REF         72.36     60.82      27.88%   ← REF outperforms 
   ─────────────────────────────────────────
 ```
 
