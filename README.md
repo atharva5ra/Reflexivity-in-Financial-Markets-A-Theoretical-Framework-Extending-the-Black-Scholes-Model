@@ -196,28 +196,34 @@ At moderate α, REF produces lower bulk volatility but **more extreme downside V
 
 ```
 .
-├── src/
-│   ├── models/
-│   │   ├── gbm.py                  # Classical Geometric Brownian Motion
-│   │   ├── reflexive_bs.py         # Reflexivity-extended Black–Scholes SDE
-│   │   └── volatility.py           # Endogenous volatility process
-│   ├── simulation/
-│   │   ├── monte_carlo.py          # PyTorch Monte Carlo engine (100k paths)
-│   │   └── grid_search.py          # (β, λ) parameter grid search
-│   ├── calibration/
-│   │   ├── alpha_inference.py      # α estimation from option Greeks
-│   │   └── data_loader.py          # Yahoo Finance data pipeline
-│   └── analysis/
-│       ├── phase_diagrams.py       # Volatility phase heatmaps
-│       ├── clustering.py           # Lag-1 autocorrelation analysis
-│       └── metrics.py              # RMSE, MAE, MAPE, VaR, correlation
+.
 ├── notebooks/
-│   ├── 01_model_overview.ipynb
-│   ├── 02_simulation_results.ipynb
-│   └── 03_empirical_comparison.ipynb
-├── data/                           # Cached historical price data
-├── figures/                        # All paper figures (reproducible)
-├── requirements.txt
+│   └── experiment.ipynb
+│       # Core notebook: model implementation, simulation, and analysis
+
+├── results/
+│   ├── alpha_0.1/
+│   ├── alpha_0.3/
+│   ├── alpha_0.6/
+│   ├── alpha_0.9/
+│   │   ├── *.png
+│   │   │   # Asset-wise comparisons (Real vs GBM vs Reflexive)
+│   │   │   # Metric plots: RMSE, MAPE, VOL, CORR, KURT
+│   │   ├── empirical_validation_results.csv
+│   │   ├── model_winner_summary.csv
+│   │   └── *.docx
+│   │       # Per-alpha summary reports
+│   │
+│   └── primary/
+│       ├── * Phase Diagram.png
+│       ├── * Vol Clustering.png
+│       ├── GBM Vs Ref Terminal Distributions.png
+│       ├── Ref Monte Carlo Simulation.png
+│       ├── reflexive_experiment_results.csv
+│       ├── summary_statistics.csv
+│       └── *.docx
+│           # Primary experiment report and figures
+
 └── README.md
 ```
 
