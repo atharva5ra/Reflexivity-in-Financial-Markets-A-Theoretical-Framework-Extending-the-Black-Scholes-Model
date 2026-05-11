@@ -208,8 +208,6 @@ At moderate α, REF produces lower bulk volatility but **more extreme downside V
 │   │   │   # Metric plots: RMSE, MAPE, VOL, CORR, KURT
 │   │   ├── empirical_validation_results.csv
 │   │   ├── model_winner_summary.csv
-│   │   └── *.docx
-│   │       # Per-alpha summary reports
 │   │
 │   └── primary/
 │       ├── * Phase Diagram.png
@@ -218,7 +216,7 @@ At moderate α, REF produces lower bulk volatility but **more extreme downside V
 │       ├── Ref Monte Carlo Simulation.png
 │       ├── reflexive_experiment_results.csv
 │       ├── summary_statistics.csv
-│           # Primary experiment report and figures
+│           # Primary experiment and figures
 
 └── README.md
 ```
