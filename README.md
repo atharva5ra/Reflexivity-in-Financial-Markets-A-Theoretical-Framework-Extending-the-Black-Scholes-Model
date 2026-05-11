@@ -218,7 +218,6 @@ At moderate α, REF produces lower bulk volatility but **more extreme downside V
 │       ├── Ref Monte Carlo Simulation.png
 │       ├── reflexive_experiment_results.csv
 │       ├── summary_statistics.csv
-│       └── *.docx
 │           # Primary experiment report and figures
 
 └── README.md
